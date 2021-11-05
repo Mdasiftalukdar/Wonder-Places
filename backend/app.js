@@ -51,7 +51,7 @@ app.use((error, req, res, next) => {
   res.json({ message: error.message || "An unknown error occurred!" });
 });
 
-mongoose.connect( "mongodb+srv://Asif:asif123@project@cluster0.jodoh.mongodb.net/WonderPlaces?retryWrites=true&w=majority",
+mongoose.connect( "mongodb+srv://(your mongodb name):(your password here)@cluster0.jodoh.mongodb.net/(your Database name here)?retryWrites=true&w=majority",
     { useNewUrlParser: true }
   )
   .then(() => {
